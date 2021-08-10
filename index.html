@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <img id="abc" src="man.png" alt="">
+        
+        <div class="svg-wrapper">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape" height="60" width="320" />
+              <div class="text">Musify</div>
+            </svg>
+          </div>
+
+        <section class="player">
+            <audio id="music-player" controls="controls" src=""></audio>
+            <div id="playing">Now playing:</div>
+        </section>
+        <br />
+        <section class="search">
+            <div id="search-form">
+                <input type="text" name="search" id="search_field" placeholder="Search for Songs / Artist" value="" />
+                <input type="submit" id="submit_button" value="Search" />
+            </div>
+        </section>
+        <hr />
+        <section id="results"></section>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
